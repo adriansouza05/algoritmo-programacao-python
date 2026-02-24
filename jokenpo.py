@@ -37,3 +37,5 @@ elif (
 # Caso contrário, jogador perde
 else:
     print('Você perdeu!!!')
+
+# Correções feitas!
