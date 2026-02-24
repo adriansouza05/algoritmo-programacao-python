@@ -20,12 +20,20 @@ sleep(0.8)
 print('PO!')
 sleep(0.8)
 
-if escolha_player == 'PEDRA' and escolha_computador == 'TESOURA' and escolha_player == 'PAPEL' and escolha_computador == 'PEDRA' and escolha_player == 'TESOURA' and escolha_computador == 'PAPEL':
-    print(f'Você escolheu {escolha_player} e o computador escolheu {escolha_computador}')
+print(f'\nVocê escolheu {escolha_player} e o computador escolheu {escolha_computador}\n')
+
+# Verificando empate
+if escolha_player == escolha_computador:
+    print('EMPATE!!!')
+
+# Verificando vitória do jogador
+elif (
+    (escolha_player == 'PEDRA' and escolha_computador == 'TESOURA') or
+    (escolha_player == 'PAPEL' and escolha_computador == 'PEDRA') or
+    (escolha_player == 'TESOURA' and escolha_computador == 'PAPEL')
+):
     print('Você venceu!!!')
-elif escolha_player == escolha_computador:
-  print(f'Você escolheu {escolha_player} e o computador escolheu {escolha_computador}')
-  print('EMPATE!!!')
+
+# Caso contrário, jogador perde
 else:
-  print(f'Você escolheu {escolha_player} e o computador escolheu {escolha_computador}')
-  print('Você perdeu!!!')
+    print('Você perdeu!!!')
