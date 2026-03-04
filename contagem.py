@@ -1,3 +1,8 @@
+
+
+#Contagem utilizando laço For e While
+
+
 num = int(input("Informe um número: "))
 
 for i in range(num):
